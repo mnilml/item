@@ -3,7 +3,224 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<style type="text/css">
+			#banner {
+				width: 100vw;
+				height: 300px;
+				background: url(images/original.jpg) no-repeat;
+				background-position: -300px;
+			}
+
+			#banner .sq {
+				position: relative;
+				width: 1200px;
+				margin: 0 auto;
+			}
+
+			#banner .sq .right {
+				position: absolute;
+				width: 210px;
+				height: 300px;
+				top: 100px;
+				right: 100px;
+				animation: zhuan .5s linear both;
+			}
+
+			@keyframes zhuan {
+				0% {
+					opacity: 0;
+					transform: translate(265px, -100px);
+				}
+
+				100% {
+					opacity: 1;
+					transform: translate(0px);
+				}
+			}
+
+			.right p {
+				font-size: 20px;
+				color: white;
+				float: right;
+				line-height: 50px;
+			}
+
+			.right span {
+				font-size: 12px;
+				color: white;
+				line-height: 20px;
+				float: right;
+				margin-left: 10px;
+				padding: 3px 5px;
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+			.right a {
+				font-size: 14px;
+				color: white;
+				line-height: 30px;
+				float: right;
+				margin-top: 10px;
+			}
+
+			.right button {
+				font-size: 16px;
+				color: #F7FFFF;
+				/* margin-left: 40px; */
+				float: right;
+				width: 150px;
+				height: 35px;
+				background-color: red;
+				border: 1px solid red;
+				margin-top: 10px;
+				/* float: right; */
+				border-radius: 2px;
+				font-weight: bolder;
+			}
+			.reports_select{
+				width: 1200px;
+				font-size: 15px;
+				margin: 0 auto;
+			}
+			.reports_select ul li{
+				width: 250px;
+				padding: 10px 20px;
+				background-color: white;
+			}
+			.reports_select img{
+				width: 300px;
+				border-radius: 8px;
+			}
+			.reports_pl{
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+			}
+			.reports_pl img{
+				width: 20px;
+				height: 20px;
+			}
+		</style>
 	</head>
 	<body>
+		<!-- 头部 -->
+		<header class="mui-bar mui-bar-nav">
+			<div class="icon">
+				<img src="images/logonew.png">
+				<ul>
+					<li>首页</li>
+					<li>酷玩</li>
+					<li>导购</li>
+					<li>使用</li>
+					<li>报告</li>
+				</ul>
+				<div class="surch">
+					<span class="icomoon"></span>
+					<button type="button">注册</button>
+				</div>
+			</div>
+		</header>
+		<!-- banner -->
+		<div id="banner">
+			<!-- <img src="images/original.jpg" > -->
+			<div class="sq">
+				<div class="right">
+					<p>幻响小贝HiFi2.1音箱</p>
+					<span>126人申请</span><span>￥599</span><span>20台</span><br>
+					<a>申请时间剩余：13天5小时37分钟</a><br>
+					<button>立即申请</button>
+				</div>
+			</div>
+		</div>
+		<!-- main -->
+		<div id="main">
+			<!-- 轮播图 -->
+			<div class="">
+				
+			</div>
+			<!-- 报告精选 -->
+			<div class="reports_select">
+				<h4>报告精选</h4>
+				<ul>
+					<li><img src="images/bg1.jpg" >
+					<span>空气争化器里面学问多得惊呆你你选对了吗?</span>
+					<div class="">
+						<span>苏苏</span>
+						<span class="reports_pl"><img src="images/use5.png" ></span>
+						<label>3</label>
+						<span class="reports_pl"><img src="images/reply.png" ></span>
+						<label>3</label>
+					</div>
+					</li>
+					<li><img src="images/bg1.jpg" ></li>
+					<li><img src="images/bg1.jpg" ></li>
+					<li><img src="images/bg1.jpg" ></li>
+					<li><img src="images/bg1.jpg" ></li>
+					<li><img src="images/bg1.jpg" ></li>
+					<li><img src="images/bg1.jpg" ></li>
+					<li><img src="images/bg1.jpg" ></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<footer>
+			<div class="footer_mes">
+				<div class="f1"></div>
+				<div class="f2">
+					<img src="images/logoImg.jpg">
+					<p>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</p>
+					<p>微信添加 JguoJguo'<br>获取我们的服务。</p>
+				</div>
+				<div class="f3">
+					<h6>免费试用</h6>
+					<a>试用流程</a>
+					<a>如何提高成功率</a>
+				</div>
+				<div class="f4">
+					<h6>友情链接</h6>
+					<ul>
+						<li>
+							<a>智东西</a>
+							<a>搜狐IT</a>
+							<a>搜狐数码</a>
+							<a>凤凰数码</a>
+							<a>泡泡网</a>
+							<a>ZUK社区</a>
+							<a>极客公园</a>
+							<a>果库</a>
+						</li>
+						<li>
+							<a>WEIBUSIemie</a>
+							<a>腾讯科技</a>
+							<a>凤凰科技</a>
+							<a>PConline</a>
+							<a>3W咖啡</a>
+							<a>亿觅</a>
+							<a>易迅易启玩</a>
+
+						</li>
+					</ul>
+				</div>
+				<div class="f5">
+					<h6>购买攻略</h6>
+					<a>美亚海淘教程</a>
+					<a>日亚海淘教程</a>
+					<a>海淘转运攻略</a>
+					<a>kickstarter众筹购买攻略</a>
+					<a>indiegogo众筹购买攻略</a>
+				</div>
+				<div class="f6">
+					<h6>厂商合作</h6>
+					<a>关于极果</a>
+					<a>联系我们</a>
+					<a>商务合作:BD@jiguo.com</a>
+					<a>CEO邮箱:CEO@jiguo.com</a>
+				</div>
+			</div>
+			<div class="banq">
+				<p>@2016极果版权所有</p>
+			</div>
+		</footer>
 	</body>
 </html>
