@@ -3,7 +3,7 @@
 				padding: 0;
 			}
 			body{
-				background: #ccc;
+				background: #f1f1f1;
 			}
 			ul,
 			li {
@@ -27,7 +27,7 @@
 			}
 
 			header {
-				width: 100vw;
+				width: 100%;
 				height: 80px;
 				background-color: white;
 			}
@@ -72,7 +72,7 @@
 			
 			/* 底部 */
 			footer{
-				width: 100vw;
+				width: 100%;
 				background-color: #555;
 			}
 			.footer_mes{
