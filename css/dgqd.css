@@ -1,0 +1,118 @@
+*{
+    padding:0;
+    margin:0;
+}
+.box{
+    width: 100vw;
+    border-top:1px solid #d0d0d0;
+}
+.yemei{
+    width: 100%;
+    height: 170px;
+    background:#ffffff;
+}
+.yemei h1{
+    text-align: center;
+    color:#291618;
+    font-family: 宋体;
+    padding-top:10px;
+}
+.yemei ul{
+    width: 100%;
+    text-align: center;
+    line-height: 1em;
+    padding-top:88px;
+    color: #b3ad9f;
+}
+.active{
+    border-bottom:3px solid #fd5238;
+    color:#fc532c;
+}
+.yemei ul li{
+    width: 100px;
+    padding:5px;
+    padding-bottom: 10px;  
+}
+.neir{
+    width: 100vw;
+    background:#f7f7f7;
+}
+.neir-box{
+    margin:0 auto;
+    width:1200px;
+    padding-top:20px;
+}
+/* zuixin */
+.zuixin{
+    display:block;
+}
+.zuixin-span{
+    display: inline-block;
+    width: 220px;
+    height: 230px;
+    border-radius: 8px;
+    border:1px solid#ccc;
+    margin:20px 37px;  
+}
+.zuixin-span img{
+    border-radius:8px 8px 0 0 ;
+    width: 220px;
+    height: 131px;
+}
+.zuixin-span a img{
+    width: 13px;
+    height: 12px;
+}
+.zuixin-span a{
+    float:right;
+    margin-top:28px;
+    margin-right: 3px;
+    
+}
+.span1 img{
+    width: 100%;
+    height: 13px;
+}
+/* zuire */
+.zuier{
+    display:none;
+}
+.zuire-span{
+    display: inline-block;
+    width: 220px;
+    height: 230px;
+    border-radius: 8px;
+    border:1px solid#ccc;
+    margin:20px 37px;
+
+    
+}
+.zuire-span img{
+    border-radius:8px 8px 0 0 ;
+    width: 220px;
+    height: 131px;
+}
+.zuire-span a img{
+    width: 13px;
+    height: 12px;
+}
+.zuire-span a{
+    float:right;
+    margin-top:28px;
+    margin-right: 3px;
+    
+}
+.span1 img{
+    width: 100%;
+    height: 13px;
+}
+/* 点击加载 */
+.jiaz{
+    width: 100vw;
+}
+.jiaz div{
+    width: 1200px;
+    text-align: center;
+    color:#ff3559;
+    padding:80px 0;
+}
