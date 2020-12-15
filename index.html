@@ -353,6 +353,13 @@
 	<script src="js/swiper-bundle.js"></script>
 	<script src="js/index.js"></script>
 	<script>
-
+		$.ajax({
+			url: "http://192.168.1.94:3000/users/register",
+			type: 'post',
+			dataType: 'json',
+			success: function(data) {
+				console.log(data)
+			}
+		});
 	</script>
 </html>
