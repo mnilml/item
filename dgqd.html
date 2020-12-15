@@ -63,6 +63,7 @@
 			   <div class="jiaz">
 				<div>
 					 <span class="jiaz-span">点击加载更多</span>
+					 <img class="jiaz-img" src="images/loading-icon.gif" alt="">
 				</div>
 			</div>
            </div>
@@ -168,7 +169,18 @@
 		}
 		jz();
 		$(".jiaz-span").click(function(){
-			setTimeout("jz()",1000)
+			$(this).hide(),$(".jiaz-img").show();
+			setTimeout(function(){
+				jz();
+				$(".jiaz-span").show();
+				$(".jiaz-img").hide();
+			},2000)
 		})
+		
+		/* $(".jiaz-span").click(function(){
+			
+			setTimeout($(this).show(),$(".jiaz-img").hide(),3000);
+			
+		}) */
 	</script>
 </html>
