@@ -29,65 +29,42 @@
         <div class="box">
             <div class="yemei">
                  <h1>导购清单</h1>
-                 <ul>
-                     <li class="active">最新</li>
-                     <li>最热</li>
+                 <ul class="ul1">
+                     <li >最新</li>
+                     <li class="active">最热</li>
                 </ul>
             </div>
            <div class="neir">
                <div class="neir-box">
                     <div class="zuixin">
-                        <span class="zuixin-span">
+                        <!-- <span class="zuixin-span">
                             <img src="images/g1.jpg" alt="">
-                            <span>花万元把蜗居秒变"豪宅"？这12件家具就能帮你办到</span><br>
-                             <a><img src="images/xinRedo.png" alt="">3</a>
-                             <a><img src="images/reply.png" alt="">3</a>
+							<span class="zt">花万元把蜗居秒变"豪宅"？这12件家具就能帮你办到</span><br>
+							<span class="a">
+								<a><img src="images/xinRedo.png" alt="">3</a>
+                                 <a><img src="images/reply.png" alt="">3</a>
+							</span>
                              <span class="span1"><img src="images/listbg.jpg" alt=""></span>
-                        </span>
-                        <span class="zuixin-span">
-                            <img src="images/g2.jpg" alt="">
-                            <span>花万元把蜗居秒变"豪宅"？这12件家具就能帮你办到</span><br>
-                             <a><img src="images/xinRedo.png" alt="">3</a>
-                             <a><img src="images/reply.png" alt="">3</a>
-                             <span class="span1"><img src="images/listbg.jpg" alt=""></span>
-                        </span>
-                        <span class="zuixin-span">
-                            <img src="images/g3.jpg" alt="">
-                            <span>花万元把蜗居秒变"豪宅"？这12件家具就能帮你办到</span><br>
-                             <a><img src="images/xinRedo.png" alt="">3</a>
-                             <a><img src="images/reply.png" alt="">3</a>
-                             <span class="span1"><img src="images/listbg.jpg" alt=""></span>
-                        </span>
-                        <span class="zuixin-span">
-                            <img src="images/g4.jpg" alt="">
-                            <span>花万元把蜗居秒变"豪宅"？这12件家具就能帮你办到</span><br>
-                             <a><img src="images/xinRedo.png" alt="">3</a>
-                             <a><img src="images/reply.png" alt="">3</a>
-                             <span class="span1"><img src="images/listbg.jpg" alt=""></span>
-                        </span>
-                        <span class="zuixin-span">
-                            <img src="images/g1.jpg" alt="">
-                            <span>花万元把蜗居秒变"豪宅"？这12件家具就能帮你办到</span><br>
-                             <a><img src="images/xinRedo.png" alt="">3</a>
-                             <a><img src="images/reply.png" alt="">3</a>
-                             <span class="span1"><img src="images/listbg.jpg" alt=""></span>
-                        </span>
+						</span> -->
+						
                     </div>
                     <div class="zuire">
-                        <span class="zuire-span">
+                        <!-- <span class="zuire-span">
                             <img src="images/g2.jpg" alt="">
-                            <span>花万元把蜗居秒变"豪宅"？这12件家具就能帮你办到</span><br>
-                             <a><img src="images/xinRedo.png" alt="">3</a>
-                             <a><img src="images/reply.png" alt="">3</a>
+							<span class="zt">花万元把蜗居秒变"豪宅"？这12件家具就能帮你办到</span><br>
+							<span class="a">
+								<a><img src="images/xinRedo.png" alt="">3</a>
+                                 <a><img src="images/reply.png" alt="">3</a>
+							</span>
                              <span class="span1"><img src="images/listbg.jpg" alt=""></span>
-                        </span>
+                        </span> -->
                     </div>    
                </div> 
-               <div class="jiaz">
-                   <div>
-                        <span>点击加载更多</span>
-                   </div>
-               </div>
+			   <div class="jiaz">
+				<div>
+					 <span class="jiaz-span">点击加载更多</span>
+				</div>
+			</div>
            </div>
         </div>
 		<!-- 底部 -->
@@ -150,4 +127,48 @@
 			</div>
 		</footer>
 	</body>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/swiper-bundle.js"></script>
+	<script>
+		$(".ul1 li:first").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".zuixin").show();
+			$(".zuire").hide();
+		});
+		$(".ul1 li:last").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".zuixin").hide();
+			$(".zuire").show();
+		})
+	</script>
+	<script>
+		var zuixin = document.querySelector(".zuixin");
+		var zuier = document.querySelector(".zuire");
+		var  jiaz = document.querySelector(".jiaz-span");
+		console.log(jiaz)
+		console.log(zuier)
+		console.log(zuixin)
+		function jz(){
+			$.ajax({
+			url:"http://192.168.1.94:3000/guid/new",
+			type:'GET',
+			dataType:'json',
+			success:function(data){
+				console.log(data)
+				for(var i = 0; i < 8;i++){
+					zuixin.innerHTML += '<span class="zuixin-span">'+'<img src='+data[i].img+'>'+'<span class="zt">'+data[i].text+'</span>'
+						+'<span class="a">'+'<a>'+'<img src=images/xinRedo.png>3'+'</a>'+'<a>'+'<img src=images/reply.png>3'+'</a>'+'</span>'
+						+'<span class="span1">'+'<img src=images/listbg.jpg>'+'</span>'+'</span>';
+					   zuier.innerHTML +=	'<span class="zuire-span">'+'<img src='+data[i].img+'>'+'<span class="zt">'+data[i].text+'</span>'
+					   	+'<span class="a">'+'<a>'+'<img src=images/xinRedo.png>3'+'</a>'+'<a>'+'<img src=images/reply.png>3'+'</a>'+'</span>'
+				     	+'<span class="span1">'+'<img src=images/listbg.jpg>'+'</span>'+'</span>';
+				} 
+			}
+		  });
+		}
+		jz();
+		$(".jiaz-span").click(function(){
+			setTimeout("jz()",1000)
+		})
+	</script>
 </html>
