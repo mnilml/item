@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #afafaf;
+}
+
+.guide_xq {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.guide_xqt {
+    width: 700px;
+    color: #afafaf;
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+.guide_xql {
+    width: 700px;
+    background: #fff;
+    line-height: 2em;
+    border-radius: 5px;
+}
+
+.xql_title {
+    padding: 20px 30px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.xql_title img {
+    width: 15px;
+    vertical-align: top;
+    margin: 0 2px;
+}
+
+.xql_title div {
+    padding: 10px 0;
+    color: #afafaf;
+}
+
+.xql_title div span {
+    float: right;
+}
+
+.xql_text {
+    padding: 20px 30px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.p1 {
+    padding-bottom: 20px;
+}
+
+.xql_text .p1 span {
+    display: block;
+    margin: 0 auto;
+    font: bold 18px/1.5em 黑体;
+}
+
+.xql_text .p1 p,
+.xql_text .p1 img,
+.xql_text .p2 p,
+.xql_text .p2 img {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.xql_text .p2 span {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font: bold 18px/1.5em 黑体;
+}
+
+.xql_text .p2 div,
+.other {
+    text-align: left;
+}
+
+.xql_text .p2 div a {
+    color: #000;
+}
+
+.other {
+    padding: 20px 0;
+}
+
+
+/* 右边分享框 */
+
+.guide_xqr {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 270px;
+    height: 115px;
+    border: 2px solid #dfdfdf;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.guide_xqr .like,
+.guide_xqr .fenx {
+    float: left;
+    width: 133px;
+    height: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    border-right: 1px solid #dfdfdf;
+}
+
+.guide_xqr .fenx {
+    border: 0;
+}
+
+.guide_xqr .like img,
+.guide_xqr .fenx img {
+    width: 26px;
+    cursor: pointer;
+}
+
+.guide_xqr .like div,
+.guide_xqr .fenx div {
+    padding: 5px 0;
+    color: #afafaf;
+}
