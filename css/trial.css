@@ -88,9 +88,8 @@
 	display: inline-block;
 	width: 225px;
 	height: 290px;
-	background: url(../images/hot3.jpg);
-	background-size: 225px 130px;
-	background-repeat: no-repeat;
+	background-size: 225px 130px !important;
+	background-repeat: no-repeat !important;
 	border-radius: 8px;
 	overflow: hidden;
 	border: 1px solid #ccc;
