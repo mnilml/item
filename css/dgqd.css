@@ -31,7 +31,8 @@
 .yemei ul li{
     width: 100px;
     padding:5px;
-    padding-bottom: 10px;  
+    padding-bottom: 10px; 
+    cursor: pointer; 
 }
 .neir{
     width: 100vw;
@@ -44,7 +45,7 @@
 }
 /* zuixin */
 .zuixin{
-    display:block;
+    display:none;
 }
 .zuixin-span{
     display: inline-block;
@@ -52,20 +53,26 @@
     height: 230px;
     border-radius: 8px;
     border:1px solid#ccc;
-    margin:20px 37px;  
+    margin:20px 37px; 
+    vertical-align: top; 
+    text-align: center;
+}
+.zt{
+    font-size: 14px;
+    
 }
 .zuixin-span img{
     border-radius:8px 8px 0 0 ;
     width: 220px;
     height: 131px;
 }
-.zuixin-span a img{
+.zuixin-span .a img{
     width: 13px;
     height: 12px;
 }
-.zuixin-span a{
+.zuixin-span .a{
     float:right;
-    margin-top:28px;
+    margin-top:45px;
     margin-right: 3px;
     
 }
@@ -74,7 +81,7 @@
     height: 13px;
 }
 /* zuire */
-.zuier{
+body .zuier{
     display:none;
 }
 .zuire-span{
@@ -84,7 +91,8 @@
     border-radius: 8px;
     border:1px solid#ccc;
     margin:20px 37px;
-
+    vertical-align: top; 
+    text-align: center;
     
 }
 .zuire-span img{
@@ -92,14 +100,18 @@
     width: 220px;
     height: 131px;
 }
-.zuire-span a img{
+.zuire-span .a img{
     width: 13px;
     height: 12px;
 }
-.zuire-span a{
+.zuire-span .a{
     float:right;
-    margin-top:28px;
+    margin-top:45px;
     margin-right: 3px;
+    
+}
+.zt{
+    font-size: 14px;
     
 }
 .span1 img{

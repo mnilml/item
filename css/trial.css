@@ -100,21 +100,21 @@
 }
 .div1{
     display: inline-block;
-    color:#ccc;
+    color: #fa553f;
     font-size: 13px;
     border-radius: 5px;
     padding:3px;
     margin-left:69px;
-    border:1px solid #ccc;
+    border:1px solid #fa553f;
 }
 .div2{
     display: inline-block;
-    color:#ccc;
+    color: #fa553f;
     font-size: 13px;
     margin-left:10px;
     border-radius: 5px;
     padding:3px;
-    border:1px solid #ccc;
+    border:1px solid #fa553f;
 }
 .div3{
     margin-top:8px;
@@ -125,7 +125,7 @@
 }
 .div4{
     text-align: center;
-    color:#ccc;
+    color: #fa553f;
 }
 /* 申请中 */
 .neir-sqz{
