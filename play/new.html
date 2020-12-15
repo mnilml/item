@@ -139,12 +139,18 @@
 				padding: 5px 30px;
 				text-align: center;
 			}
+
 			.jz{
 				font-size: 18px;
 				width: 120px;
 				color: orangered;
 				margin: 50px auto;
 				cursor: pointer;
+			}
+			.jz img{
+				margin-left: 30px;
+				width: 40px;
+				display: none;
 			}
 		</style>
 	</head>
@@ -189,14 +195,15 @@
 
 						</div>
 						<div class="xux">
-				
+
 						</div>
 					</div>
 
 				</div>
 			</div>
 			<div class="jz">
-				点击加载更多
+				<span>点击加载更多</span>
+				<img src="../images/loading-icon.gif" >
 			</div>
 		</div>
 
@@ -278,55 +285,73 @@
 			dataType: 'json',
 			success: function(data) {
 				console.log(data)
-				jz = function(f,m){
-					for(var i = f;i<m;i++){
-					for(var n = 0 ;n<8;n++){
-						a.innerHTML += '<li>' + '<img src ='+ data[i][n].img + '>' +'<span class="reports_t">'+data[i][n].text+'</span>'+'<div class="r_s1">'+
-							'<span>'+data[0][i].price+'</span>'
-							+'<span class="reports_pl"><img src="../images/reply.png">'+data[i][n].like+'</span>'+
-							'<span class="reports_pl"><img src="../images/use5.png">'+data[i][n].words+'</span>'+
-						'</div>'+'</li>';
-						hot.innerHTML +=('<li>' + '<img src ='+ data[i][n].img + '>' +'<span class="reports_t">'+data[i][n].text+'</span>'+'<div class="r_s1">'+
-							'<span>'+data[0][i].price+'</span>'
-							+'<span class="reports_pl"><img src="../images/reply.png">'+data[i][n].like+'</span>'+
-							'<span class="reports_pl"><img src="../images/use5.png">'+data[i][n].words+'</span>'+
-						'</div>'+'</li>');
-					}
+					for (var i = 0; i < 1; i++) {
+						for (var n = 0; n < 8; n++) {
+							a.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
+								'</span>' + '<div class="r_s1">' +
+								'<span>' + data[0][i].price + '</span>' +
+								'<span class="reports_pl"><img src="../images/reply.png">' + data[i][n].like + '</span>' +
+								'<span class="reports_pl"><img src="../images/use5.png">' + data[i][n].words + '</span>' +
+								'</div>' + '</li>';
+							// hot.innerHTML += ('<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
+							// 	'</span>' + '<div class="r_s1">' +
+							// 	'<span>' + data[0][i].price + '</span>' +
+							// 	'<span class="reports_pl"><img src="../images/reply.png">' + data[i][n].like + '</span>' +
+							// 	'<span class="reports_pl"><img src="../images/use5.png">' + data[i][n].words + '</span>' +
+							// 	'</div>' + '</li>');
+						}
+
 				}
-				
-				}
-				jz(0,2);
-				$('.jz').click(function(){
-					var one = 2;
-					var two = 3;
-					if(two<data.length){
-						
-						
-						console.log(one)
-						console.log(two)
-						jz(one,two);
-						one++;
-						two++;
-					}else if(two>=data.length){
-						console.log(123)
-					}
-					
-				})
 			}
 		});
-		
+
 		var xux = document.querySelector(".xux");
-		
+
 		$.ajax({
 			url: "http://192.168.1.94:3000/play/category",
 			type: 'GET',
 			dataType: 'json',
-			success: function(data){
+			success: function(data) {
 				console.log(data)
-				for(var i = 0 ;i<data.live.length;i++){
-					xux.innerHTML+='<a>'+data.live[i].productName+'（'+data.live[i].nums+'）'+'</a>'
+				for (var i = 0; i < data.live.length; i++) {
+					xux.innerHTML += '<a>' + data.live[i].productName + '（' + data.live[i].nums + '）' + '</a>'
 				}
 			}
 		});
+
+		
+			$('.jz').click(function() {
+				$('.jz span').css('display','none');
+				$('.jz img').css('display','block');
+				setTimeout(function() {
+				$.ajax({
+					url: "http://192.168.1.94:3000/play/new",
+					type: 'GET',
+					dataType: 'json',
+					success: function(data) {
+						console.log(data)
+							for (var i = 1; i < 4; i++) {
+								for (var n = 0; n < 8; n++) {
+									a.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
+										'</span>' + '<div class="r_s1">' +
+										'<span>' + data[0][i].price + '</span>' +
+										'<span class="reports_pl"><img src="../images/reply.png">' + data[i][n].like + '</span>' +
+										'<span class="reports_pl"><img src="../images/use5.png">' + data[i][n].words + '</span>' +
+										'</div>' + '</li>';
+									// hot.innerHTML += ('<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
+									// 	'</span>' + '<div class="r_s1">' +
+									// 	'<span>' + data[0][i].price + '</span>' +
+									// 	'<span class="reports_pl"><img src="../images/reply.png">' + data[i][n].like + '</span>' +
+									// 	'<span class="reports_pl"><img src="../images/use5.png">' + data[i][n].words + '</span>' +
+									// 	'</div>' + '</li>');
+								}
+						}
+					}
+				})
+				}, 2000)
+				$('.jz span').css('display','block');
+				$('.jz img').css('display','none');
+			})
+		
 	</script>
 </html>

@@ -1,118 +1,131 @@
-		* {
-				margin: 0;
-				padding: 0;
-			}
-			body{
-				background: #f1f1f1;
-			}
-			ul,
-			li {
-				display: inline-block;
-				list-style: none;
-			}
-			@font-face {
-				font-family: 'icomoon';
-				src: url('../fonts/icomoon.eot?ca2afz');
-				src: url('../fonts/icomoon.eot?ca2afz#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?ca2afz') format('truetype'), url('../fonts/icomoon.woff?ca2afz') format('woff'), url('fonts/icomoon.svg?ca2afz#icomoon') format('svg');
-				font-weight: normal;
-				font-style: normal;
-				font-display: block;
-			}
+* {
+	margin: 0;
+	padding: 0;
+}
 
-			.icomoon {
-				font-family: icomoon;
-				font-size: 18px;
-				margin-right: 20px;
-				cursor: pointer;
-			}
+body {
+	background: #f1f1f1;
+}
 
-			header {
-				width: 100%;
-				height: 80px;
-				background-color: white;
-			}
+ul,
+li {
+	display: inline-block;
+	list-style: none;
+}
 
-			.icon {
-				width: 1200px;
-				margin: 0 auto;
-			}
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot?ca2afz');
+	src: url('../fonts/icomoon.eot?ca2afz#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?ca2afz') format('truetype'), url('../fonts/icomoon.woff?ca2afz') format('woff'), url('fonts/icomoon.svg?ca2afz#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
 
-			.icon img {
-				height: 60px;
-				margin-right: 30px;
-			}
+.icomoon {
+	font-family: icomoon;
+	font-size: 18px;
+	margin-right: 20px;
+	cursor: pointer;
+}
 
-			.icon li {
-				float: left;
-				color: black;
-				font-size: 18px;
-				padding: 22px 30px;
-				cursor: pointer;
-			}
+header {
+	width: 100%;
+	height: 80px;
+	background-color: white;
+}
 
-			.icon li:hover {
-				color: orangered;
-			}
+.icon {
+	width: 1200px;
+	margin: 0 auto;
+}
 
-			.icon .surch {
-				display: inline-block;
-				float: right;
-				padding: 20px;
-			}
+.icon img {
+	height: 60px;
+	margin-right: 30px;
+}
 
-			.icon button {
-				float: right;
-				outline: none;
-				cursor: pointer;
-				padding: 4px 8px;
-				color: orangered;
-				border-radius: 3px;
-				border: 1px solid orangered;
-			}
-			
-			/* 底部 */
-			footer{
-				width: 100%;
-				background-color: #555;
-			}
-			.footer_mes{
-				width: 1200px;
-				height: 300px;
-				margin: 0 auto;
-			}
-			.footer_mes div{
-				float: left;
-				
-				height: 200px;
-				margin:10px 20px;
-				color: white;
-			}
-			.footer_mes .f1{
-				width: 180px;
-				background: url(../images/code.png) no-repeat;
-			}
-			.footer_mes p{
-				font-size: 13px;
-				padding: 10px 0;
-				
-			}
-			.footer_mes a{
-				font-size: 13px;
-			}
-			.footer_mes h6{
-				margin-bottom: 30px;
-			}
-			.banq{
-				color: white;
-				width: 140px;
-				font-size: 14px;
-				margin: 0 auto;
-				padding-bottom: 10px;
-			}
-			.footer_mes .f4 li{
-				vertical-align: top;
-			}
-			.footer_mes a{
-				display: block;
-				padding: 3px;
-			}
+.icon li {
+	float: left;
+	color: black;
+	font-size: 18px;
+	padding: 22px 30px;
+	cursor: pointer;
+}
+
+.icon li:hover {
+	color: orangered;
+}
+
+.icon .surch {
+	display: inline-block;
+	float: right;
+	padding: 20px;
+}
+
+.icon button {
+	float: right;
+	outline: none;
+	cursor: pointer;
+	padding: 4px 8px;
+	margin-left: 10px;
+	color: orangered;
+	border-radius: 3px;
+	border: 1px solid orangered;
+}
+
+/* 底部 */
+footer {
+	width: 100%;
+	background-color: #555;
+}
+
+.footer_mes {
+	width: 1200px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.footer_mes div {
+	float: left;
+
+	height: 200px;
+	margin: 10px 20px;
+	color: white;
+}
+
+.footer_mes .f1 {
+	width: 180px;
+	background: url(../images/code.png) no-repeat;
+}
+
+.footer_mes p {
+	font-size: 13px;
+	padding: 10px 0;
+
+}
+
+.footer_mes a {
+	font-size: 13px;
+}
+
+.footer_mes h6 {
+	margin-bottom: 30px;
+}
+
+.banq {
+	color: white;
+	width: 140px;
+	font-size: 14px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.footer_mes .f4 li {
+	vertical-align: top;
+}
+
+.footer_mes a {
+	display: block;
+	padding: 3px;
+}

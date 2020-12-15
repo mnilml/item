@@ -1,70 +1,84 @@
-.neir{
-    width: 100vw;
-    border-top:2px solid #d0d0d0;
-    background-color: #ffffff;
+.neir {
+	width: 100vw;
+	border-top: 2px solid #d0d0d0;
+	background-color: #ffffff;
 }
-.neir-box{
-    width: 1200px;
-    
-    margin:0 auto; 
+
+.neir-box {
+	width: 1200px;
+
+	margin: 0 auto;
 }
-.neir-box-yemei{
-    width: 100%;
-    height: 173px;
-    text-align: center;
-    border-bottom:2px solid #f2f2f2;
+
+.neir-box-yemei {
+	width: 100%;
+	height: 173px;
+	text-align: center;
+	border-bottom: 2px solid #f2f2f2;
 }
-.neir-box-yemei h1{
-    text-align: center;
-    color:#291618;
-    font-family: 宋体;
-    padding-top:10px;
+
+.neir-box-yemei h1 {
+	text-align: center;
+	color: #291618;
+	font-family: 宋体;
+	padding-top: 10px;
 }
-.neir-box-yemei ul{
-    width: 100%;
-    text-align: center;
-    line-height: 1em;
-    padding-top:88px;
-    color: #b3ad9f;
+
+.neir-box-yemei ul {
+	width: 100%;
+	text-align: center;
+	line-height: 1em;
+	padding-top: 88px;
+	color: #b3ad9f;
 }
-.active{
-    border-bottom:3px solid #fd5238;
-    color:#fc532c;
+
+.active {
+	border-bottom: 3px solid #fd5238;
+	color: #fc532c;
 }
-.neir-box-yemei ul li{
-    width: 100px;
-    padding:5px;
-    padding-bottom: 10px;  
-    cursor: pointer;
+
+.neir-box-yemei ul li {
+	width: 100px;
+	padding: 5px;
+	padding-bottom: 10px;
+	cursor: pointer;
 }
-.dzts{
-    width: 100%;
-    background:#f7f7f7;
+
+.dzts {
+	width: 100%;
+	background: #f7f7f7;
 }
-.xuanx{
-    text-align: center;
-    width: 100%;
-    height: 50px;
-    background:#ffffff;
-    
+
+.xuanx {
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	background: #ffffff;
+
 }
-.xuanx ul{
-    width: 100%;
-   color:#ccc;
+
+.xuanx ul {
+	width: 100%;
+	color: #ccc;
 }
-.xuanx li{
-    margin-top:20px;
-    width: 150px;
-    cursor: pointer;
+
+.xuanx li {
+	margin-top: 20px;
+	width: 150px;
+	cursor: pointer;
 }
-.li1{
-    font-weight: bold;
-    color:#000;
+
+.li1 {
+	font-weight: bold;
+	color: #000;
 }
-.dzsy{
-    display:block;
+
+.dzsy {
+	display: block;
 }
+
 /* 大众使用 */
+<<<<<<< HEAD
 .dzsy-neir{
     display: block;
     width: 100%;
@@ -127,148 +141,238 @@
     text-align: center;
     color: #fa553f;
 }
+=======
+.dzsy-neir {
+	display: block;
+	width: 100%;
+	background-color: #f7f7f7;
+}
+
+.neir-span {
+	display: inline-block;
+	width: 225px;
+	height: 290px;
+	background: url(../images/hot3.jpg);
+	background-size: 225px 130px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	margin: 20px 34px;
+}
+
+.div {
+	display: inline-block;
+	padding: 2px 5px;
+	color: #fff;
+	background: #fd5643;
+	float: right;
+	font-size: 13px;
+	border-radius: 0 0 0 5px;
+}
+
+.span1 {
+	display: inline-block;
+	text-align: center;
+	margin-top: 106px;
+	padding: 10px 0;
+	font-size: 18px;
+}
+
+.div1 {
+	display: inline-block;
+	color: #ccc;
+	font-size: 13px;
+	border-radius: 5px;
+	padding: 3px;
+	margin-left: 69px;
+	border: 1px solid #ccc;
+}
+
+.div2 {
+	display: inline-block;
+	color: #ccc;
+	font-size: 13px;
+	margin-left: 10px;
+	border-radius: 5px;
+	padding: 3px;
+	border: 1px solid #ccc;
+}
+
+.div3 {
+	margin-top: 8px;
+	text-align: center;
+}
+
+.div3 span {
+	color: red;
+}
+
+.div4 {
+	text-align: center;
+	color: #ccc;
+}
+
+>>>>>>> 88af5a55d8856f3552545fc2dbbbe2117c0446f8
 /* 申请中 */
-.neir-sqz{
-    display:none;
-    width: 100%;
-    background-color: #f7f7f7;
+.neir-sqz {
+	display: none;
+	width: 100%;
+	background-color: #f7f7f7;
 }
-.sqz-span{
-    display: inline-block;
-    width:225px ;
-    height: 290px;
-    background:url(../images/hot3.jpg);
-    background-size: 225px 130px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    overflow: hidden;
-    border:1px solid  #ccc;
-    margin:20px 34px;
+
+.sqz-span {
+	display: inline-block;
+	width: 225px;
+	height: 290px;
+	background: url(../images/hot3.jpg);
+	background-size: 225px 130px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	margin: 20px 34px;
 }
+
 /* 使用中 */
-.neir-syz{
-    display:none;
-    width: 100%;
-    background-color: #f7f7f7;
+.neir-syz {
+	display: none;
+	width: 100%;
+	background-color: #f7f7f7;
 }
-.syz-span{
-    display: inline-block;
-    width:225px ;
-    height: 290px;
-    background:url(../images/hot4.jpg);
-    background-size: 225px 130px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    overflow: hidden;
-    border:1px solid  #ccc;
-    margin:20px 34px;
+
+.syz-span {
+	display: inline-block;
+	width: 225px;
+	height: 290px;
+	background: url(../images/hot4.jpg);
+	background-size: 225px 130px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	margin: 20px 34px;
 }
- /* 已结束 */
- .neir-yjs{
-    display:none;
-    width: 100%;
-    background-color: #f7f7f7;
+
+/* 已结束 */
+.neir-yjs {
+	display: none;
+	width: 100%;
+	background-color: #f7f7f7;
 }
-.yjs-span{
-    display: inline-block;
-    width:225px ;
-    height: 290px;
-    background:url(../images/hot5.jpg);
-    background-size: 225px 130px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    overflow: hidden;
-    border:1px solid  #ccc;
-    margin:20px 34px;
+
+.yjs-span {
+	display: inline-block;
+	width: 225px;
+	height: 290px;
+	background: url(../images/hot5.jpg);
+	background-size: 225px 130px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	margin: 20px 34px;
 }
+
 /* 体验师专享 */
-.tyszx{
-    display:none;
+.tyszx {
+	display: none;
 }
-.tyszx-neir{
-    width: 100%;
-    display: block;
-    background-color: #f7f7f7;
+
+.tyszx-neir {
+	width: 100%;
+	display: block;
+	background-color: #f7f7f7;
 }
-.li2{
-    cursor: pointer;
+
+.li2 {
+	cursor: pointer;
 }
-.tyszx-span{
-    display: inline-block;
-    width:225px ;
-    height: 290px;
-    background:url(../images/hot1.jpg);
-    background-size: 225px 130px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    overflow: hidden;
-    border:1px solid  #ccc;
-    margin:20px 34px;
+
+.tyszx-span {
+	display: inline-block;
+	width: 225px;
+	height: 290px;
+	background: url(../images/hot1.jpg);
+	background-size: 225px 130px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	margin: 20px 34px;
 }
-.sf{
-    display: inline-block;
-    padding:2px 5px;
-    color:#b2ad85;
-    background:#fef4d1;
-    float: right;
-    font-size: 13px;
-    border-radius: 0 0 0 5px;
+
+.sf {
+	display: inline-block;
+	padding: 2px 5px;
+	color: #b2ad85;
+	background: #fef4d1;
+	float: right;
+	font-size: 13px;
+	border-radius: 0 0 0 5px;
 }
+
 /* 申请中 */
-.tyszx-sqz{
-    display:none;
-    width: 100%;
-    background-color: #f7f7f7;
+.tyszx-sqz {
+	display: none;
+	width: 100%;
+	background-color: #f7f7f7;
 }
-.tyszx-sqz-span{
-    display: inline-block;
-    width:225px ;
-    height: 290px;
-    background:url(../images/hot2.jpg);
-    background-size: 225px 130px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    overflow: hidden;
-    border:1px solid  #ccc;
-    margin:20px 34px;
+
+.tyszx-sqz-span {
+	display: inline-block;
+	width: 225px;
+	height: 290px;
+	background: url(../images/hot2.jpg);
+	background-size: 225px 130px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	margin: 20px 34px;
 }
+
 /* 使用中 */
-.tyszx-syz{
-    display:none;
-    width: 100%;
-    background-color: #f7f7f7;
+.tyszx-syz {
+	display: none;
+	width: 100%;
+	background-color: #f7f7f7;
 }
-.tyszx-syz-span{
-    display: inline-block;
-    width:225px ;
-    height: 290px;
-    background:url(../images/hot3.jpg);
-    background-size: 225px 130px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    overflow: hidden;
-    border:1px solid  #ccc;
-    margin:20px 34px;
+
+.tyszx-syz-span {
+	display: inline-block;
+	width: 225px;
+	height: 290px;
+	background: url(../images/hot3.jpg);
+	background-size: 225px 130px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	margin: 20px 34px;
 }
- /* 已结束 */
- .tyszx-yjs{
-    display:none;
-    width: 100%;
-    background-color: #f7f7f7;
+
+/* 已结束 */
+.tyszx-yjs {
+	display: none;
+	width: 100%;
+	background-color: #f7f7f7;
 }
-.tyszx-yjs-span{
-    display: inline-block;
-    width:225px ;
-    height: 290px;
-    background:url(../images/hot4.jpg);
-    background-size: 225px 130px;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    overflow: hidden;
-    border:1px solid #ccc;
-    margin:20px 34px;
+
+.tyszx-yjs-span {
+	display: inline-block;
+	width: 225px;
+	height: 290px;
+	background: url(../images/hot4.jpg);
+	background-size: 225px 130px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	margin: 20px 34px;
 }
-.li2{
-    font-weight: bold;
-    color:#000;
+
+.li2 {
+	font-weight: bold;
+	color: #000;
 }
