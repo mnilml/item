@@ -129,3 +129,8 @@ footer {
 	display: block;
 	padding: 3px;
 }
+ul li img:hover{
+	opacity: 0.8;
+	margin-bottom: 2px;
+	width: 250px;
+}
