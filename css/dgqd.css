@@ -123,8 +123,17 @@ body .zuier{
     width: 100vw;
 }
 .jiaz div{
-    width: 1200px;
+    width: 100%;
     text-align: center;
     color:#ff3559;
     padding:80px 0;
+    cursor: pointer;
+}
+.jiaz span{
+    display: block;
+}
+.jiaz-img{
+    display: none;
+    width: 25px;
+    height: 25px;
 }
