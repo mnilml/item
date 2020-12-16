@@ -484,3 +484,10 @@
 				background-color: rgba(0, 0, 0, 0.7);
 				display: none;
 			}
+			.f4 a{
+				color:#fff;
+				text-decoration: none;
+			}
+			.f4 a:hover{
+				color:blue;
+			}
