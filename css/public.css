@@ -127,6 +127,8 @@ footer {
 
 .footer_mes a {
 	display: block;
+	text-decoration: none;
+	color: white;
 	padding: 3px;
 }
 ul li img:hover{
