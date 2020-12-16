@@ -1,0 +1,104 @@
+.cont {
+  width: 1000px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.cont .cont-left {
+  float: left;
+  width: 270px;
+  height: 320px;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: lightgrey;
+}
+.cont .cont-left span {
+  display: block;
+  width: 100px;
+  padding: 30px 120px 5px 0px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+}
+.cont .cont-left h4 {
+  margin: 10px 20px;
+  cursor: pointer;
+}
+.cont .cont-left h4:hover {
+  color: pink;
+}
+.cont .cont-left li {
+  height: 30px;
+  cursor: pointer;
+  padding-left: 40px;
+}
+.cont .cont-left li:hover {
+  color: orange;
+}
+.cont .cont-right {
+  float: right;
+  width: 700px;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: none;
+  background-color: lightgray;
+}
+.cont .cont-right span {
+  display: block;
+  width: 300px;
+  padding: 30px 300px 5px 0px;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+}
+.cont .cont-right h3 {
+  margin: 20px 30px;
+}
+.cont .cont-right h4 {
+  margin: 30px;
+}
+.cont .cont-right .about {
+  width: 90%;
+  margin: 10px 30px;
+  line-height: 1.5em;
+}
+.cont .cont-right ul {
+  margin: 10px 50px;
+}
+.cont .cont-right {
+  float: right;
+  width: 700px;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: none;
+  background-color: lightgray;
+}
+.cont .cont-right span {
+  display: block;
+  width: 300px;
+  padding: 30px 300px 5px 0px;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+}
+.cont .cont-right h3 {
+  margin: 20px 30px;
+}
+.cont .cont-right h4 {
+  margin: 20px 30px;
+}
+.cont .cont-right ul {
+  margin: 10px 30px;
+}
+.cont .cont-right ul li {
+  line-height: 1.5em;
+}
+.cont .cont-right .content-right2 {
+  width: 700px;
+  height: 650px;
+}
+.cont-right.active {
+  display: block;
+}
