@@ -38,7 +38,7 @@ var a = document.querySelector('.reports_select ul')
 		var guide = document.querySelector(".guide ul");
 		var coldplay = document.querySelector(".coldplay ul");
 		$.ajax({
-			url: "http://192.168.1.94:3000/play/new",
+			url: "http://192.168.1.24:3000/play/new",
 			type: 'GET',
 			dataType: 'json',
 			success: function(data) {
@@ -72,7 +72,7 @@ var a = document.querySelector('.reports_select ul')
 			$('.jz img').css('display','block');
 			setTimeout(function() {
 			$.ajax({
-				url: "http://192.168.1.94:3000/play/new",
+				url: "http://192.168.1.24:3000/play/new",
 				type: 'GET',
 				dataType: 'json',
 				success: function(data) {

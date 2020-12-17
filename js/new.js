@@ -9,7 +9,7 @@
 		var a = document.querySelector('.new')
 		var hot = document.querySelector('.hot')
 		$.ajax({
-			url: "http://192.168.1.94:3000/play/new",
+			url: "http://192.168.1.24:3000/play/new",
 			type: 'GET',
 			dataType: 'json',
 			success: function(data) {
