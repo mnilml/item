@@ -3,70 +3,115 @@
 	<head>
 		<meta charset="utf-8">
 		<title>注册</title>
-		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<style type="text/css">
-			body{
+			body {
 				background: #ccc;
 			}
-			#main{
-				width: 1200px;
-				margin: 0 auto;
-				margin-top: 30px;
-				margin-bottom: 30px;
-				border-radius: 8px;
-				background: white;
+			#z_f_body {
+			    width: 100%;
+			    background-color: #f7f7f7;
+			    padding-top: 25px;
+			    padding-bottom: 35px;
 			}
-			#main h4{
-				margin: 10px 2px;
-				padding: 0 10px;
-				font-size: 16px;
-				font-weight: 200;
-				display: inline-block;
-				border-left: 5px solid orangered;
+			
+			form {
+			    width: 1000px;
+			    box-sizing: border-box;
+			    margin: 0 auto;
+			    border: 1px solid #d6d6d6;
+			    border-radius: 7px;
+			    background-color: #ffffff;
+			    padding: 25px 0px 120px 0px;
 			}
-			form{
-				width: 320px;
-				margin: 0 auto;
-				margin-top: 100px;
-				padding-bottom: 150px;
-			}
-		   form	div{
-				margin-top: 20px;
-			}
-			input{
-				width: 300px;
-				height: 25px;
-				padding: 5px 10px;
-				border: 1px solid #F0F0F0;
-				border-radius: 5px;
-				background-color: #f0f0f0;
+			
+			input {
+			    float: left;
 				outline: none;
+			    width: 400px;
+			    height: 50px;
+			    line-height: 50px;
+			    box-sizing: border-box;
+			    background-color: #f7f7f7;
+			    border: 1.5px solid #efefef;
+			    border-radius: 8px;
+			    padding-left: 10px;
 			}
-			.jym{
-				width: 150px;
+			
+			.d_input {
+			    width: 245px;
+			    line-height: 50px;
 			}
-			.mui-input-row img{
-				vertical-align: middle;
-				float: right;
+			
+			#z_f_body p {
+			    font-size: 20px;
+			    line-height: 25px;
+			    padding-left: 25px;
+			    border-left: 6px solid #ff5244;
+			    margin-bottom: 72px;
 			}
-			.yzm{
-				width: 150px;
+			
+			.yz_biaodan {
+			    margin-left: 300px;
 			}
-			.mui-input-row button{
-				width: 120px;
-				height: 40px;
-				float: right;
-				outline: none;
-				border-radius: 8px;
+			
+			.yz_biaodan>div {
+			    overflow: hidden;
+			    margin-bottom: 27px;
 			}
-			.register button{
-				width: 100%;
-				height: 40px;
-				border-radius: 8px;
-				outline: none;
-				background-color: orangered;
-				color: white;
-				border: 1px solid #F0F0F0;
+			
+			.yz_biaodan>div>div {
+			    float: left;
+			    display: none;
+			    width: 260px;
+				font-size: 14px;
+				opacity: 0.9;
+			    line-height: 50px;
+			    margin-left: 8px;
+			    padding-left: 18px;
+			}
+			
+			.xx_ts {
+			    background: url(./images/ts.png) no-repeat 0px 17.5px;
+			    background-size: 15px;
+			}
+			
+			.xx_cw {
+			    background: url(./images/cw.png) no-repeat 0px 17.5px;
+			    background-size: 15px;
+			}
+			
+			.xx_zq {
+			    background: url(./images/zq.png) no-repeat 0px 17.5px;
+			    background-size: 15px;
+			}
+			
+			.deng_lu {
+			    padding: 0px;
+			    background-color: #fe5341;
+			    color: #ffffff;
+			}
+			
+			.b1 {
+			    float: left;
+			    margin-left: 23px;
+			    width: 132px;
+			    height: 50px;
+			    box-sizing: border-box;
+			    background: url(./images/imgCode.jpg) no-repeat 5px 12px;
+			}
+			
+			.b2 {
+			    float: left;
+			    margin-left: 23px;
+			    width: 132px;
+			    height: 50px;
+			    box-sizing: border-box;
+			    border: 1px solid #a2a2a2;
+			    background-color: #fefefe;
+			    outline: none;
+			    border-radius: 7px;
+			    color: #9d9ca1;
 			}
 		</style>
 	</head>
@@ -76,11 +121,21 @@
 			<div class="icon">
 				<img src="images/logonew.png">
 				<ul>
-					<a href="index.html"><li>首页</li></a>
-					<a href="play/new.html"><li>酷玩</li></a>
-					<a href="dgqd.html"><li>导购</li></a>
-					<a href="trial.html"><li>使用</li></a>
-					<a href="report/report1.html"><li>报告</li></a>
+					<a href="index.html">
+						<li>首页</li>
+					</a>
+					<a href="play/new.html">
+						<li>酷玩</li>
+					</a>
+					<a href="dgqd.html">
+						<li>导购</li>
+					</a>
+					<a href="trial.html">
+						<li>使用</li>
+					</a>
+					<a href="report/report1.html">
+						<li>报告</li>
+					</a>
 				</ul>
 				<div class="surch">
 					<span class="icomoon"></span>
@@ -89,33 +144,39 @@
 			</div>
 		</header>
 		<!-- 主体 -->
-		<div id="main">
-			<h4>注册极果</h4>
-			<form class="mui-input-group">
-				<div class="mui-input-row">
-					<input type="text" class="phone" placeholder="请输入登录手机号">
-				</div>
-				<div class="mui-input-row">
-					<input type="text" class="jym" placeholder="请输入图片校验码">
-					<label><img src="images/imgCode.jpg" ></label>
-				</div>
-				<div class="mui-input-row">
-					<input type="text" class="yzm" placeholder="请输入4位数字验证码">
-					<label><button type="button">获取验证码</button></label>
-				</div>
-				<div class="mui-input-row">
-					<input type="text" class="userName" placeholder="请输入用户名">
-				</div>
-				<div class="mui-input-row">
-					<input type="password" class="passward" placeholder="请输入新密码">
-				</div>
-				<div class="mui-input-row">
-					<input type="password" class="passward" placeholder="请输入新密码">
-				</div>
-				<div class="register">
-					<button type="button">立即注册</button>
-				</div>
-			</form>
+		<div id="z_f_body">
+		    <form action="#####">
+		        <p>注册极果</p>
+		        <div class="yz_biaodan">
+		            <div>
+		                <input type="text" placeholder="请输入登录手机号" name="sj" id="sj" maxlength="11" required>
+		                <div id="sjId"></div>
+		            </div>
+		            <div>
+		                <input type="text" placeholder="请输入图片校验码" class="d_input" name="tp" id="tp" maxlength="4" required>
+		                <span class="b1"></span>
+		                <div id="tpId"></div>
+		            </div>
+		            <div>
+		                <input type="text" placeholder="请输入4位数字验证码" class="d_input" name="yzm" id="yzm" maxlength="4" required>
+		                <button class="b2" id="yz_m">获取验证码</button>
+		                <div id="yzmId"></div>
+		            </div>
+		            <div>
+		                <input type="text" placeholder="请输入用户名" name="username" id="username" maxlength="16" required>
+		                <div id="usernameId"></div>
+		            </div>
+		            <div>
+		                <input type="password" placeholder="请输入密码" name="password" id="password" maxlength="18" required>
+		                <div id="passwordId"></div>
+		            </div>
+		            <div>
+		                <input type="password" placeholder="确认密码" name="rpassword" id="rpassword" maxlength="18" required>
+		                <div id="rpasswordId"></div>
+		            </div>
+		            <div><input type="submit" value="立即注册" class="deng_lu" id="submit"></div>
+		        </div>
+		    </form>
 		</div>
 
 		<!-- 底部 -->
@@ -123,7 +184,7 @@
 			<div class="footer_mes">
 				<div class="f1"></div>
 				<div class="f2">
-					<img src="images/logoImg.jpg" >
+					<img src="images/logoImg.jpg">
 					<p>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</p>
 					<p>微信添加 JguoJguo'<br>获取我们的服务。</p>
 				</div>
@@ -153,7 +214,7 @@
 							<a>3W咖啡</a>
 							<a>亿觅</a>
 							<a>易迅易启玩</a>
-							
+
 						</li>
 					</ul>
 				</div>
@@ -178,4 +239,240 @@
 			</div>
 		</footer>
 	</body>
+	<script>
+		//手机号验证
+		var sj = document.getElementById('sj');
+		var sjId = document.getElementById('sjId');
+		var sjt1 = '请输入11位的手机号';
+		var sjt2 = '手机号不能为空';
+		var sjt3 = '手机号格式错误';
+		var reg1 = /^1[3456789]\d{9}$/;
+		//图片验证码验证
+		var tp = document.getElementById('tp');
+		var tpId = document.getElementById('tpId');
+		var tpt1 = '请输入图中的验证码';
+		var tpt2 = '验证码不能为空';
+		var tpt3 = '验证码输入错误';
+		var reg2 = /^[R,r][2][B,b][7]$/;
+		//用户名验证
+		var us = document.getElementById('username');
+		var usId = document.getElementById('usernameId');
+		var ust1 = '用户名8-16位，输入类型为数字、字母';
+		var ust2 = '用户名不能为空';
+		var ust3 = '用户名格式输入错误';
+		var reg3 = /^[0-9a-zA-Z]{8,16}$/;
+			
+		//密码验证
+		var ps = document.getElementById('password');
+		var psId = document.getElementById('passwordId');
+		var pst1 = '请输入6-18位密码,不能为纯数字';
+		var pst2 = '密码不能为空';
+		var pst3 = '密码格式输入错误';
+		var reg4 = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z\\W]{6,18}$/;
+		//密码重复确认验证
+		var rps = document.getElementById('rpassword');
+		var rpsId = document.getElementById('rpasswordId');
+			
+		rps.onfocus = function() {
+		    rpsId.style.display = 'block';
+		    if (rps.value == '' || rps.value != ps.value) {
+		        rps.style.borderColor = '#86A4CB';
+		        rpsId.innerText = '重复输入确认密码';
+		        rpsId.className = 'xx_ts';
+		        rpsId.style.color = 'black';
+		    }
+		}
+		rps.oninput = function() {
+		    if (rps.value == '') {
+		        rps.style.borderColor = 'red';
+		        rpsId.className = 'xx_cw';
+		        rpsId.innerText = '重复密码不能为空';
+		        rpsId.style.color = 'red';
+		    } else if (rps.value != ps.value) {
+		        rps.style.borderColor = 'red';
+		        rpsId.className = 'xx_cw';
+		        rpsId.innerText = '两次密码输入不一致';
+		        rpsId.style.color = 'red';
+		    } else {
+		        rps.style.borderColor = '#549DF8';
+		        rpsId.className = 'xx_zq';
+		        rpsId.innerText = '输入正确';
+		        rpsId.style.color = '#5AF27A';
+		    }
+		}
+		rps.onblur = function() {
+		        if (rps.value == '') {
+		            rps.style.borderColor = 'red';
+		            rpsId.className = 'xx_cw';
+		            rpsId.innerText = '重复密码不能为空';
+		            rpsId.style.color = 'red';
+		        } else if (rps.value != ps.value) {
+		            rps.style.borderColor = 'red';
+		            rpsId.className = 'xx_cw';
+		            rpsId.innerText = '两次密码输入不一致';
+		            rpsId.style.color = 'red';
+		        } else {
+		            rps.style.borderColor = '#549DF8';
+		            rpsId.className = 'xx_zq';
+		            rpsId.innerText = '输入正确';
+		            rpsId.style.color = '#5AF27A';
+		        }
+		    }
+		    //封装函数
+		function yz(name, y, reg, ts1, ts2, ts3) {
+		    name.onfocus = function() {
+		        y.style.display = 'block';
+		        if (name.value == '' || reg.test(name.value) == false) {
+		            name.style.borderColor = '#86A4CB';
+		            y.innerText = ts1;
+		            y.className = 'xx_ts';
+		            y.style.color = 'black';
+		        }
+		    }
+		    name.oninput = function() {
+		        if (name.value == '') {
+		            name.style.borderColor = 'red';
+		            y.className = 'xx_cw';
+		            y.innerText = ts2;
+		            y.style.color = 'red';
+		        } else if (reg.test(name.value) == false) {
+		            name.style.borderColor = 'red';
+		            y.className = 'xx_cw';
+		            y.innerText = ts3;
+		            y.style.color = 'red';
+		        } else {
+		            name.style.borderColor = '#549DF8';
+		            y.className = 'xx_zq';
+		            y.innerText = '输入正确';
+		            y.style.color = '#5AF27A';
+		        }
+		    }
+		    name.onblur = function() {
+		        if (name.value == '') {
+		            name.style.borderColor = 'red';
+		            y.className = 'xx_cw';
+		            y.innerText = ts2;
+		            y.style.color = 'red';
+		        } else if (reg.test(name.value) == false) {
+		            name.style.borderColor = 'red';
+		            y.className = 'xx_cw';
+		            y.innerText = ts3;
+		            y.style.color = 'red';
+		        } else {
+		            name.style.borderColor = '#549DF8';
+		            y.className = 'xx_zq';
+		            y.innerText = '输入正确';
+		            y.style.color = '#5AF27A';
+		        }
+		    }
+		}
+		yz(sj, sjId, reg1, sjt1, sjt2, sjt3);
+		yz(tp, tpId, reg2, tpt1, tpt2, tpt3);
+		yz(us, usId, reg3, ust1, ust2, ust3);
+		yz(ps, psId, reg4, pst1, pst2, pst3);
+			
+		//验证码验证
+			
+		var yzm = document.getElementById('yzm');
+		var yzmId = document.getElementById('yzmId');
+			
+		var sum;
+		yzm.onfocus = function() {
+		        yzmId.style.display = 'block';
+		        if (yzm.value == '' || yzm.value != sum) {
+		            yzm.style.borderColor = '#86A4CB';
+		            yzmId.innerText = '请获取验证码';
+		            yzmId.className = 'xx_ts';
+		            yzmId.style.color = 'black';
+		        } else {
+		            yzm.style.borderColor = '#549DF8';
+		            yzmId.innerText = '输入正确';
+		            yzmId.className = 'xx_zq';
+		            yzmId.style.color = '#5AF27A';
+		        }
+		    }
+		    //获取验证码鸡验证
+		yz_m.onclick = function() {
+		    var s = 60;
+		    yz_m.innerText = s + '秒后可重新获取';
+		    yz_m.disabled = true;
+		    yz_m.style.backgroundColor = '#666';
+		    yz_m.style.color = 'white';
+		    var timer = setInterval(function() {
+		        s--;
+		        yz_m.innerText = s + '秒后可重新获取';
+		        if (s < 1) {
+		            s = 60;
+		            yz_m.innerText = '获取验证码';
+		            yz_m.disabled = '';
+		            yz_m.style.backgroundColor = '#fefefe';
+		            yz_m.style.color = '#9d9ca1';
+		            clearInterval(timer);
+		        }
+		    }, 1000)
+			
+			
+		    yzm.oninput = function() {
+		        if (yzm.value == '' || yzm.value != sum) {
+		            yzm.style.borderColor = '#86A4CB';
+		            yzmId.innerText = '验证码为' + sum + ',请输入验证码';
+		            yzmId.className = 'xx_ts';
+		            yzmId.style.color = 'black';
+		        } else {
+		            yzm.style.borderColor = '#549DF8';
+		            yzmId.innerText = '输入正确';
+		            yzmId.className = 'xx_zq';
+		            yzmId.style.color = '#5AF27A';
+		        }
+		    }
+			
+		    yzm.onblur = function() {
+		        if (yzm.value == '') {
+		            yzm.style.borderColor = 'red';
+		            yzmId.className = 'xx_cw';
+		            yzmId.innerText = '验证码不能为空';
+		            yzmId.style.color = 'red';
+		        } else if (yzm.value != sum) {
+		            yzm.style.borderColor = 'red';
+		            yzmId.className = 'xx_cw';
+		            yzmId.innerText = '验证码输入错误';
+		            yzmId.style.color = 'red';
+		        } else {
+		            yzm.style.borderColor = '#549DF8';
+		            yzmId.className = 'xx_zq';
+		            yzmId.innerText = '输入正确';
+		            yzmId.style.color = '#5AF27A';
+		        }
+		    }
+		    return false;
+		}
+		submit.onclick = function() {
+		    if (reg1.test(sj.value) == false) {
+		        alert('请输入正确的手机号');
+		        return false;
+		    }
+		    if (reg2.test(tp.value) == false) {
+		        alert('请输入正确的图片验证码');
+		        return false;
+		    }
+		    if (yzm.value != sum) {
+		        alert('请输入正确的验证码');
+		        return false;
+		    }
+		    if (reg3.test(us.value) == false) {
+		        alert('请输入正确的用户名');
+		        return false;
+		    }
+		    if (reg4.test(ps.value) == false) {
+		        alert('请输入正确的密码');
+		        return false;
+		    }
+		    if (ps.value != rps.value) {
+		        alert('请输入正确的重复密码');
+		        return false;
+		    }
+		    alert('注册成功');
+		    window.open('./dengru.html');
+		}
+	</script>
 </html>

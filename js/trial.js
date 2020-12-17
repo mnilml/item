@@ -71,7 +71,7 @@
 		var tyszxsyz = document.querySelector('.tyszx-syz')
 		var tyszxyjs = document.querySelector('.tyszx-yjs')
 		$.ajax({
-			url: "http://192.168.1.94:3000/useing/public",
+			url: "http://192.168.1.24:3000/useing/public",
 			type: 'GET',
 			dataType: 'json',
 			success: function(data) {

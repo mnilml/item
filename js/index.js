@@ -59,8 +59,8 @@ var a = document.querySelector('.reports_select ul')
 						coldplay.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
 							'</span>' + '<div class="r_s1">' +
 							'<span>● 苏苏</span>' +
-							'<span class="reports_pl"><img src="../images/reply.png">' + data[i][n].like + '</span>' +
-							'<span class="reports_pl"><img src="../images/use5.png">' + data[i][n].words + '</span>' +
+							'<span class="reports_pl"><img src="images/reply.png">' + data[i][n].like + '</span>' +
+							'<span class="reports_pl"><img src="images/use5.png">' + data[i][n].words + '</span>' +
 							'</div>' + '</li>';
 					}
 

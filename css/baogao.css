@@ -16,13 +16,13 @@ li {
 }
 .box .header {
   position: absolute;
-  width: 1400px;
+  width: 1200px;
   height: 75px;
   border-bottom: 1px solid gray;
   background-color: white;
 }
 .box .header .logo img {
-  margin-left: 200px;
+  /* margin-left: 200px; */
   margin-top: 10px;
   height: 50px;
 }
