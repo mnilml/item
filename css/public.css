@@ -5,6 +5,7 @@
 
 body {
 	background: #f1f1f1;
+	/* overflow-y:hidden; */
 }
 
 ul,
@@ -59,7 +60,7 @@ header {
 }
 
 .icon .surch {
-	display: inline-block;
+	/* display: inline-block; */
 	float: right;
 	padding: 20px;
 }
@@ -79,7 +80,7 @@ header {
 footer {
 	position: relative;
 	z-index: 100;
-	width: 100vw;
+	width: 100%;
 	background-color: #555;
 }
 
@@ -135,6 +136,6 @@ footer {
 }
 ul li img:hover{
 	opacity: 0.8;
-	margin-bottom: 2px;
-	width: 250px;
+	/* margin-bottom: 2px; */
+	/* width: 250px; */
 }
