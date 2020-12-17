@@ -139,3 +139,6 @@ ul li img:hover{
 	/* margin-bottom: 2px; */
 	/* width: 250px; */
 }
+.icon a li.active_li {
+    color: orangered;
+}

@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<style type="text/css">
-			#totop{
+			#totop {
 				position: fixed;
 				z-index: 100;
 				right: 40px;
@@ -22,6 +22,31 @@
 				line-height: 40px;
 				cursor: pointer;
 			}
+
+			.r_s1 {
+				position: absolute;
+				width:200px;
+				bottom: 10px;
+				
+			}
+
+			#main .reports_select ul li {
+				position: relative;
+			}
+
+			#main .guide ul li {
+				position: relative;
+			}
+
+			#main .coldplay ul li {
+				position: relative;
+			}
+
+			.bottomImg {
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+			}
 		</style>
 	</head>
 	<body>
@@ -30,15 +55,25 @@
 			<div class="icon">
 				<img src="images/logonew.png">
 				<ul>
-					<a href="index.html"></a><li>首页</li></a>
-					<a href="play/new.html"><li>酷玩</li></a>
-					<a href="dgqd.html"><li>导购</li></a>
-					<a href="trial.html"><li>使用</li></a>
-					<a href="report/report1.html"><li>报告</li></a>
+					<a href="index.html">
+						<li class="active_li">首页</li>
+					</a>
+					<a href="play/new.html">
+						<li>酷玩</li>
+					</a>
+					<a href="dgqd.html">
+						<li>导购</li>
+					</a>
+					<a href="trial.html">
+						<li>使用</li>
+					</a>
+					<a href="report/report1.html">
+						<li>报告</li>
+					</a>
 				</ul>
 				<div class="surch">
 					<span class="icomoon"></span>
-					<button type="button">注册</button>
+					<a href="login.html"><button type="button">注册</button></a>
 					<button type="button">登录</button>
 				</div>
 			</div>
@@ -283,48 +318,80 @@
 			<div class="reports_select">
 				<h4>报告精选</h4>
 				<ul>
-
+					<li>
+						<img src='./images/g1.jpg '><span class="reports_t">花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</span>
+						<div class="r_s1">
+							<span>● 苏苏</span>
+							<span class="reports_pl"><img src="images/reply.png">3</span>
+							<span class="reports_pl"><img src="images/use5.png">3</span>
+						</div>
+					</li>
+					<li>
+						<img src='./images/g2.jpg '><span class="reports_t">到底有没有完美的iPhone手机配件，答案都在这里</span>
+						<div class="r_s1">
+							<span>● 苏苏</span>
+							<span class="reports_pl"><img src="images/reply.png">3</span>
+							<span class="reports_pl"><img src="images/use5.png">3</span>
+						</div>
+					</li>
+					<li>
+						<img src='./images/g3.jpg '><span class="reports_t">2016，这8支钢笔够你装逼一整年</span>
+						<div class="r_s1">
+							<span>● 苏苏</span>
+							<span class="reports_pl"><img src="images/reply.png">3</span>
+							<span class="reports_pl"><img src="images/use5.png">3</span>
+						</div>
+					</li>
+					<li>
+						<img src='./images/g4.jpg '><span class="reports_t">他用12年找一把完美 剃须刀，给你2万字终极购买指南</span>
+						<div class="r_s1">
+							<span>● 苏苏</span>
+							<span class="reports_pl"><img src="images/reply.png">3</span>
+							<span class="reports_pl"><img src="images/use5.png">3</span>
+						</div>
+					</li>
 				</ul>
 			</div>
 			<!-- 精选导购 -->
-			 <div class="Guide">
-			        <div class="guide">
-			            <h4>精选导购</h4>
-			            <ul>
-			                <li>
-			                    <img src='./images/g1.jpg '><span class="reports_t">花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</span>
-			                    <div class="r_s1">
-			                        <span class="reports_pl"><img src="./images/reply.png">3</span>
-			                        <span class="reports_pl"><img src="./images/use5.png">3</span>
-			                    </div>
-			                    <img class="bottomImg" src="./images/listbg.jpg" alt="">
-			                </li>
-			                <li>
-			                    <img src='./images/g2.jpg '><span class="reports_t">到底有没有完美的iPhone手机配件，答案都在这里</span>
-			                    <div class="r_s1">
-			                        <span class="reports_pl"><img src="./images/reply.png">3</span>
-			                        <span class="reports_pl"><img src="./images/use5.png">3</span>
-			                    </div>
-			                    <img class="bottomImg" src="./images/listbg.jpg" alt=""></li>
-			                <li>
-			                    <img src='./images/g3.jpg '><span class="reports_t">2016，这8支钢笔够你装逼一整年</span>
-			                    <div class="r_s1">
-			                        <span class="reports_pl"><img src="./images/reply.png">3</span>
-			                        <span class="reports_pl"><img src="./images/use5.png">3</span>
-			                    </div>
-			                    <img class="bottomImg" src="./images/listbg.jpg" alt="">
-			                </li>
-			                <li>
-			                    <img src='./images/g4.jpg '><span class="reports_t">他用12年找一把完美 剃须刀，给你2万字终极购买指南</span>
-			                    <div class="r_s1">
-			                        <span class="reports_pl"><img src="./images/reply.png">3</span>
-			                        <span class="reports_pl"><img src="./images/use5.png">3</span>
-			                    </div>
-			                    <img class="bottomImg" src="./images/listbg.jpg" alt="">
-			                </li>
-			            </ul>
-			        </div>
-			    </div>
+			<div class="Guide">
+				<div class="guide">
+					<h4>精选导购</h4>
+					<ul>
+						<li>
+							<img src='./images/g1.jpg '><span class="reports_t">花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</span>
+							<div class="r_s1">
+								<span class="reports_pl"><img src="images/reply.png">3</span>
+								<span class="reports_pl"><img src="images/use5.png">3</span>
+							</div>
+							<img class="bottomImg" src="./images/listbg.jpg" alt="">
+						</li>
+						<li>
+							<img src='./images/g2.jpg '><span class="reports_t">到底有没有完美的iPhone手机配件，答案都在这里</span>
+							<div class="r_s1">
+								<span class="reports_pl"><img src="images/reply.png">3</span>
+								<span class="reports_pl"><img src="images/use5.png">3</span>
+							</div>
+							<img class="bottomImg" src="./images/listbg.jpg" alt="">
+						</li>
+						<li>
+							<img src='./images/g3.jpg '><span class="reports_t">2016，这8支钢笔够你装逼一整年</span>
+							<div class="r_s1">
+								<span class="reports_pl"><img src="images/reply.png">3</span>
+								<span class="reports_pl"><img src="images/use5.png">3</span>
+							</div>
+							<img class="bottomImg" src="./images/listbg.jpg" alt="">
+						</li>
+						<li>
+							<img src='./images/g4.jpg '><span class="reports_t">他用12年找一把完美 剃须刀，给你2万字终极购买指南</span>
+							<div class="r_s1">
+								<span class="reports_pl"><img src="images/reply.png">3</span>
+								<span class="reports_pl"><img src="images/use5.png">3</span>
+							</div>
+							<img class="bottomImg" src="./images/listbg.jpg" alt="">
+						</li>
+					</ul>
+				</div>
+			</div>
 			<!-- 发现酷玩 -->
 			<div class="coldplay">
 				<h4>发现酷玩</h4>
@@ -347,7 +414,9 @@
 					<p>微信添加 JguoJguo'<br>获取我们的服务。</p>
 				</div>
 				<div class="f3">
-					<h6>免费试用</h6>
+					<a href="about.html">
+						<h6>免费试用</h6>
+					</a>
 					<a>试用流程</a>
 					<a>如何提高成功率</a>
 				</div>
@@ -376,7 +445,9 @@
 					</ul>
 				</div>
 				<div class="f5">
-					<h6>购买攻略</h6>
+					<a href="guide/guide.html">
+						<h6>购买攻略</h6>
+					</a>
 					<a>美亚海淘教程</a>
 					<a>日亚海淘教程</a>
 					<a>海淘转运攻略</a>
@@ -384,7 +455,9 @@
 					<a>indiegogo众筹购买攻略</a>
 				</div>
 				<div class="f6">
-					<h6>厂商合作</h6>
+					<a href="help.html">
+						<h6>厂商合作</h6>
+					</a>
 					<a>关于极果</a>
 					<a>联系我们</a>
 					<a>商务合作:BD@jiguo.com</a>
@@ -411,19 +484,19 @@
 				console.log(data)
 			}
 		});
-		
+
 		//
 		$(document).scroll(function() {
-		        if ($(this).scrollTop() > 300) {
-		            $("#totop").stop().fadeIn()
-		        } else {
-		            $("#totop").stop().fadeOut()
-		        }
-		    })
-		    $("#totop").click(function() {
-		        $("html,body").stop().animate({
-		            scrollTop: 0
-		        }, 800);
-		    })
+			if ($(this).scrollTop() > 300) {
+				$("#totop").stop().fadeIn()
+			} else {
+				$("#totop").stop().fadeOut()
+			}
+		})
+		$("#totop").click(function() {
+			$("html,body").stop().animate({
+				scrollTop: 0
+			}, 800);
+		})
 	</script>
 </html>
